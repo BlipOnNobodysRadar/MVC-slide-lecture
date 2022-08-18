@@ -1,0 +1,152 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+     background-color: whitesmoke;
+}
+.main-wrapper {
+     display: flex;
+     justify-content: center;
+     min-width: 100vw;
+     height: 100%;
+     width: 100%;
+}
+.ol-hook {
+     padding-left: 10%;
+}
+section {
+     min-width: 1000px;
+}
+h1 {
+     text-align: center;
+     margin: 0 0 1rem 0;
+     font-size: 3.2rem;
+}
+.card-panel.subcard {
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-top:2rem;
+     margin-bottom: 0;
+     padding: 2% 5%;
+     position: relative;
+     min-width: 79%;
+     width: 80%;
+     min-height: 250px;
+}
+strong {
+     font-weight: 700;
+}
+.card-panel.subcard .card-title {
+     margin-bottom: 24px;
+}
+.card-panel.subcard p {
+     padding:12px;
+     padding-left: 24px;
+     margin: 0;
+}
+.card-panel.subcard ol {
+     margin: 0 1%;
+}
+a.right {
+     position: absolute;
+     right:0%;
+     top:35%;
+     transform: translateX(50%);
+}
+a.right:hover {
+     transform: scale(1.25) translateX(50%);
+}
+a.left {
+     position: absolute;
+     left:0%;
+     top:35%;
+     transform: translateX(-50%);
+}
+a.left:hover {
+     transform: scale(1.25) translateX(-50%);
+}
+h2 {
+     margin: 0;
+}
+.align-left {
+     display: inline-block;
+     text-align: left;
+     width: 49%;
+}
+.align-right {
+     display: inline-block;
+     text-align: right;
+     width:49%;
+}
+.example {
+     display: block;
+     margin-left: 10%;
+     max-width: 600px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.card-image {
+     display: flex;
+     justify-content: center;
+     object-fit: contain;
+     position: relative;
+}
+.img {
+     height: auto; 
+     width: auto; 
+     max-width: 600px; 
+     max-height: 450px;
+}
+a {
+     font-size: 1.25rem;
+     font-weight: bold;
+}
+.here {
+     text-decoration: underline;
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+
+@media (max-width: 1000px) {
+     .img {
+          height: auto; 
+          width: auto; 
+          max-width: 400px; 
+          max-height: 300px;
+     }
+     section {
+          min-width: fit-content;
+     }
+}

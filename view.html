@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="description here">
+    	<meta name="keywords" content="one, two, three">
+		<title>MVC (View)</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">	
+    <link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+			<div class="main-wrapper">
+        <section class="card card card-panel" id="view">
+          <h1>View</h1>
+          <div class="card-panel subcard">
+						<h2 class="card-title">The View handles presentation to the user (UI/UX).</h3>
+            <p class="card-content"><strong>- Controls what the user can see and interact with.</strong></p>
+            <p class="card-content"><strong>- Recieves data to display from the Model.</strong></p>
+            <p class="card-content"><strong>- Sends any user input to the Controller -- the View only handles display.</strong></p>
+            <p class="card-content">
+              <strong>- Can sometimes recieve instructions directly from the Controller.</strong> 
+              <br>
+                 <span class="example">Example: Display some data in alphabetical order. 
+                  <br>Reason: There's no need to interact with the Model, the data itself is not modified.</span>
+
+            </p>
+            <a class="btn-floating btn-large waves-effect waves-light red left" href="model.html">
+              <i class="material-icons">keyboard_arrow_left</i>
+            </a>
+            <a class="btn-floating btn-large waves-effect waves-light red right" href="controller.html">
+              <i class="material-icons">keyboard_arrow_right</i>
+            </a>
+					</div>
+                <div class="card-image">
+                  <img class="img" src="images/view.png" alt="mvc-img">
+                </div>
+          <div class="card-action">
+                  <div class="align-left">
+                    <a href="index.html">MVC</a>
+                    <a href="model.html">Model</a>
+                    <span class="here">VIEW</span>
+                  </div>
+                  <div class="align-right">
+                    <a href="controller.html">Controller</a>
+                  </div>
+                </div>
+        </section>
+      </div>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	</body>
+</html>
